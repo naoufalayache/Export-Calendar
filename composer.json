@@ -1,0 +1,17 @@
+{
+    "name": "naoufalayache/export-calendar",
+    "description": "Simple PHP library to generate iCalendar files",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ExportCalendar\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "NaoufalAyache"
+        }
+    ],
+    "require": {}
+}

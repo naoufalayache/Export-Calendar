@@ -1,7 +1,7 @@
 <?php
 /* Declaring the namespace of the class. */
 
-namespace ECalendar;
+namespace ExportCalendar;
 
 class ECalendar
 {
