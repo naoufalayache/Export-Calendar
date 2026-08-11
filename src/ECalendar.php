@@ -50,7 +50,7 @@ class ECalendar
         }
         $ical .= "END: VCALENDAR\n";
         header("Content-Type: text/Calendar; charset=utf-8");
-        header("Content-Disposition: inline; filename=" . $slug . ".ics");
+        header("Content-Disposition: inline; filename=" . ($slug ?? 'no-valid-filename-name') . ".ics");
         echo $ical;
     }
 }
