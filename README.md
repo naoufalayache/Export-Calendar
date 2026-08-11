@@ -1,7 +1,8 @@
-Rédacteur : AYACHE NAOUFAL
-Documentation :
-Exemple d'utilisation :
+## Rédacteur : AYACHE NAOUFAL
 
+### Documentation :
+Exemple d'utilisation : 
+```php
 //Events à exporter pas de limites
 $events = array(
     array(
@@ -24,3 +25,4 @@ require_once('./Chemin/vers/Export_Calendar.php');
 use ECalendar as EC;
 $e = new EC\ECalendar('Congés plannifié',$events) //Premier argument => Nom des events
 $e->exportCalendar();
+```
