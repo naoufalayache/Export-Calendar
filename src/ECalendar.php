@@ -28,10 +28,11 @@ class ECalendar
      */
     public function exportCalendar()
     {
-        $ical = "BEGIN:VCALENDAR\n";
-        $ical .= "VERSION:2.0\n";
-        $ical .= "PRODID:-//LearnPHP.co//NONSGML" . $this->name . "//EN\n";
-        $ical .= "METHOD: REQUEST\n";
+        $ical = "BEGIN:VCALENDAR\r\n";
+        $ical .= "VERSION:2.0\r\n";
+        $ical .= "PRODID:-//ExportCalendar//" . $this->name . "//EN\r\n";
+        $ical .= "CALSCALE:GREGORIAN\r\n";
+        $ical .= "METHOD:PUBLISH\r\n";
         foreach ($this->events as $event) {
             $slug = strtolower((str_replace(array(' ', "'", '.'), array('_', '', ''), $this->name)));
             $ical .= "BEGIN:VEVENT\n";
